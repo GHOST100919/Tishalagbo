@@ -1,0 +1,11 @@
+@media (min-width: 600px) {
+  .cards-grid-responsive {
+    grid-template-columns: 2fr 12fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cards-grid-responsive {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
