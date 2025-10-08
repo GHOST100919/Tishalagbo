@@ -12,7 +12,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/Navbar" element={<Navbar />} />
+      <Route path="/navbar" element={<Navbar />} />
       <Route path="/Products" element={<Products />} />
       <Route path='/Footer' element={<Footer/>} />
     </Routes>
