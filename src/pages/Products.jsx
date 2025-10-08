@@ -1,10 +1,9 @@
 import React, { useState, useEffect, useMemo } from 'react'
 
 // Components
-import Navbar from '../components/navbar'
-import ElectricBorder from '../components/border'
-import Footer from '../components/footer'
-
+import Navbar from '../components/Navbar.jsx'
+import Footer from '../components/Footer.jsx'
+import ElectricBorder from '../components/border.jsx'
 // Assets
 import cinamonImg from '/cinamon.webp'
 import pumpkinseedsImg from '/pumpkinseeds.webp'

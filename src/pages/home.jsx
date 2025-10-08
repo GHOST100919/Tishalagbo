@@ -1,12 +1,11 @@
-
 import React from 'react'
-import Navbar from '../components/navbar'
+import Navbar from '../components/Navbar.jsx'
 import Orb from '../components/Orb.jsx'
 import herbsImg from '/herbs.jpg';
 import rootedImg from '/rooted.jpeg';
 import assuranceImg from '/assurance.jpeg';
 import backImg from '/back.jpg';
-import Footer from '../components/footer.jsx';
+import Footer from '../components/Footer.jsx';
 import './home.module.css';
 
 
