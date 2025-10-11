@@ -35,7 +35,7 @@ const About = () => {
             traditional herbal knowledge, Tishalagbo bridges the gap between
             modern wellness and ancient wisdom. Every item we offer is crafted
             or sourced with care — free from artificial additives and full of
-            nature’s finest goodness.
+            nature’s finest products.
           </p>
 
           {/* Brand Values */}
