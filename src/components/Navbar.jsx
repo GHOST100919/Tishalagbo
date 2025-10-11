@@ -23,11 +23,9 @@ const Navbar = () => {
               className={`flex-col sm:flex-row font-semibold text-lg sm:flex sm:space-x-6 w-full sm:w-auto ${open ? 'flex' : 'hidden'} sm:!flex`}
               style={{
                 marginTop: open ? 16 : 0,
-                background: open ? 'rgba(15,32,39,0.98)' : 'none',
                 borderRadius: open ? '0 0 1rem 1rem' : 0,
-                boxShadow: open ? '0 8px 24px #00ffb366' : 'none',
                 padding: open ? '1rem 0' : 0,
-                alignItems: 'center',
+                alignItems: 'left',
                 transition: 'all 0.2s',
               }}
             >
@@ -37,7 +35,7 @@ const Navbar = () => {
                 onMouseOut={e => e.currentTarget.style.color = '#fff'}
               >Home</li>
               </Link>
-              <Link to='/about'>
+              <Link to='/About'>
               <li style={{ cursor: 'pointer', transition: 'color 0.2s', padding: '0.5rem 1rem' }}
                 onMouseOver={e => e.currentTarget.style.color = '#00ffb3'}
                 onMouseOut={e => e.currentTarget.style.color = '#fff'}
@@ -49,13 +47,15 @@ const Navbar = () => {
                 onMouseOut={e => e.currentTarget.style.color = '#fff'}
               >Products</li>
               </Link>
+              <Link to='/Contact'>
               <li style={{ cursor: 'pointer', transition: 'color 0.2s', padding: '0.5rem 1rem' }}
                 onMouseOver={e => e.currentTarget.style.color = '#00ffb3'}
                 onMouseOut={e => e.currentTarget.style.color = '#fff'}
               >Contact</li>
+              </Link>
             </ul>
           </div>
-          <header style={{ fontWeight: 900, fontSize: '1.5rem', letterSpacing: '2px', color: '#00ffb3', textShadow: '0 2px 8px #000' }}>Tishalagbo</header>
+          <header style={{ fontWeight: 900, fontSize: '1.5rem', letterSpacing: '2px', color: '#00ffb3', textShadow: '0 2px 8px #000', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><img style={{backgroundColor: 'green', color: 'green'}} src='/icon.png' className='rounded-full w-8 h-8'/> Tishaalagbo</header>
         </div>
       </nav>
     </div>

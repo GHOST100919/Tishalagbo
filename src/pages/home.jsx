@@ -7,6 +7,7 @@ import assuranceImg from '/assurance.jpeg';
 import backImg from '/back.jpg';
 import Footer from '../components/Footer.jsx';
 import './home.module.css';
+import { Link } from 'react-router-dom';
 
 
 
@@ -17,18 +18,13 @@ const OrbWithOverlay = ({ text }) => (
     maxWidth: '500px',
     height: '60vw',
     maxHeight: '500px',
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    zIndex: 0,
-    borderRadius: '50%',
-    background: 'rgba(0,0,0,0.2)',
+    position: 'relative',   // ✅ instead of absolute
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    pointerEvents: 'none',
-    marginTop: '5rem',
+    borderRadius: '50%',
+    background: 'rgba(0,0,0,0.2)',
+    // margin: '2rem',       // ✅ add spacing
   }}>
     <Orb
       hoverIntensity={2}
@@ -62,8 +58,8 @@ const Home = () => {
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    paddingTop: '100px',
-    marginBottom: '2.5rem',
+    paddingTop: '80px',
+    marginBottom: '1.5rem',
   }}>
     <h1 style={{
       color: '#fff',
@@ -75,7 +71,7 @@ const Home = () => {
       textShadow: '0 2px 16px #000',
       maxWidth: '95vw',
     }}>
-      Welcome to Tishalagbo
+      Welcome to Tishaalagbo
     </h1>
     <p style={{
       color: '#b2f5ea',
@@ -88,9 +84,10 @@ const Home = () => {
       Discover the power of nature and tradition. Explore our herbal products and holistic wellness solutions, rooted in culture and care.
     </p>
     <OrbWithOverlay text={''} />
+    <Link to='/Products'>
     <button
       style={{
-        marginTop: '2.5rem',
+        marginTop: '1.5rem',
         background: 'linear-gradient(90deg, #00ffb3 0%, #00c3ff 100%)',
         color: '#222',
         fontWeight: 700,
@@ -116,17 +113,17 @@ const Home = () => {
     >
       Shop Now
     </button>
+    </Link>
   </section>
 
         {/* Cards Section */}
         <section style={{
           width: '100%',
-          marginTop: '4rem',
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
         }}>
-          <h2 style={{ color: '#fff', fontSize: '2rem', fontWeight: 700, marginBottom: '2rem', letterSpacing: '1px', textShadow: '0 2px 16px #000' }}>
+          <h2 style={{ color: '#fff', fontSize: '2rem', fontWeight: 700, marginBottom: '2rem', letterSpacing: '1px', textShadow: '0 2px 16px #000', marginTop: '10rem' }}>
             Featured Herbal Products
           </h2>
           <div
@@ -241,7 +238,7 @@ const Home = () => {
           alignItems: 'center',
         }}>
           <h2 style={{ color: '#00ffb3', fontSize: '2rem', fontWeight: 700, marginBottom: '1.5rem', letterSpacing: '1px', textShadow: '0 2px 16px #000', textAlign: 'center' }}>
-            Why Choose Tishalagbo?
+            Why Choose Tishaalagbo?
           </h2>
           <div style={{
             display: 'flex',

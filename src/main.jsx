@@ -6,15 +6,19 @@ import Home from './pages/Home.jsx'
 import Navbar from './components/Navbar.jsx'
 import Products from './pages/Products.jsx'
 import Footer from './components/Footer.jsx'
+import Contact from './pages/Contact.jsx'
+import About from './pages/About.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/navbar" element={<Navbar />} />
+      <Route path="/Navbar" element={<Navbar />} />
       <Route path="/Products" element={<Products />} />
       <Route path='/Footer' element={<Footer/>} />
+      <Route path='/Contact' element={<Contact/>} />
+      <Route path='/About' element={<About/>} />
     </Routes>
     </BrowserRouter>
   </React.StrictMode>

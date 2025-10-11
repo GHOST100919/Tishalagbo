@@ -1,10 +1,9 @@
 import React from 'react'
-import Navbar from './components/Navbar.jsx'
+import Back from './components/Backg.jsx'
 const App = () => {
   return (
-    <div>
-      <Navbar />
-      <h1>hhh</h1>
+    <div className='relative z-10'>
+      <Back/> 
     </div>
   )
 }
